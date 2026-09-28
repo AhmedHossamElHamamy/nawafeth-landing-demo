@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>دليل الاستخدام — قالب نوافذ</title>
+  <meta name="description" content="دليل استخدام قالب نوافذ لصفحات الهبوط العربية الإنجليزية: التثبيت، التخصيص، النماذج، الربط، النشر.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>(function(){try{var t=localStorage.getItem('nawafidh-theme');if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='dark';if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .doc { display: grid; grid-template-columns: 250px 1fr; gap: 2.5rem; align-items: start; padding-block: 3rem; }
+    .toc { position: sticky; top: calc(var(--header-h) + 1rem); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; }
+    .toc a { display: block; padding: .35rem .6rem; border-radius: 8px; color: var(--muted); font-weight: 600; font-size: .95rem; }
+    .toc a:hover { background: var(--brand-soft); color: var(--brand-text); text-decoration: none; }
+    .doc section { margin-bottom: 2.5rem; }
+    .doc h2 { font-size: 1.6rem; border-bottom: 2px solid var(--border); padding-bottom: .5rem; }
+    pre { direction: ltr; text-align: left; background: #0f172a; color: #e2e8f0; padding: 1rem 1.2rem; border-radius: 12px; overflow-x: auto; font-size: .9rem; line-height: 1.6; }
+    code { direction: ltr; unicode-bidi: isolate; background: var(--surface-2); padding: .1rem .4rem; border-radius: 6px; font-size: .9em; }
+    pre code { background: none; padding: 0; }
+    table.t { width: 100%; border-collapse: collapse; } table.t td, table.t th { border-bottom: 1px solid var(--border); padding: .6rem; text-align: start; vertical-align: top; }
+    .note { background: var(--brand-soft); border-radius: 12px; padding: 1rem 1.2rem; }
+    @media (max-width: 900px) { .doc { grid-template-columns: 1fr; } .toc { position: static; } }
+  </style>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+  <a class="logo" href="index.html"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></svg></span><span>نوافذ — الدليل</span></a>
+  <div class="header-tools" style="margin-inline-start:auto"><a class="btn btn-ghost btn-sm" href="index.html">النماذج</a><a class="btn btn-ghost btn-sm" href="sections.html">مكتبة الأقسام</a>
+  <button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="تبديل الوضع الليلي"><span class="i-moon"><svg class="icon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></span><span class="i-sun"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span></button></div>
+</div></header>
+<main id="main" class="container doc">
+  <nav class="toc" aria-label="المحتويات">
+    <a href="#intro">مقدمة</a><a href="#start">البدء السريع</a><a href="#files">هيكل الملفات</a><a href="#pages">الصفحات والنماذج</a><a href="#colors">الألوان والخط</a>
+    <a href="#lang">العربية والإنجليزية</a><a href="#dark">الوضع الليلي</a><a href="#sections">مكتبة الأقسام</a><a href="#forms">النماذج والربط</a>
+    <a href="#widgets">الأسعار والعداد والسلايدر</a><a href="#seo">تحسين محركات البحث</a><a href="#deploy">النشر</a><a href="#credits">المصادر والتراخيص</a><a href="#changelog">سجل التغييرات</a>
+  </nav>
+  <div>
+    <section id="intro"><h1>دليل استخدام قالب نوافذ</h1>
+      <p><b>نوافذ</b> قالب صفحات هبوط احترافي مكتوب بـ HTML5 و CSS3 و JavaScript خالصة، يأتي بنظام تصميم واحد و<b>5 نماذج جاهزة</b> (منصة SaaS، تطبيق جوال، وكالة رقمية، عيادة طبية، أكاديمية ودورات)، وكل نموذج بنسختين: عربية من اليمين لليسار وإنجليزية من اليسار لليمين.</p>
+      <p class="note">لا يحتاج القالب إلى أي أدوات بناء أو مكتبات أو اتصال بالإنترنت: افتح أي ملف HTML في المتصفح مباشرة.</p></section>
+
+    <section id="start"><h2>البدء السريع</h2>
+      <ol><li>فك ضغط الملف، وافتح <code>index.html</code> لاستعراض كل النماذج.</li>
+        <li>اختر النموذج الأقرب لنشاطك، مثل <code>clinic.html</code> ونسخته الإنجليزية <code>clinic-en.html</code>.</li>
+        <li>عدّل النصوص مباشرة في ملف HTML، والألوان من <code>assets/css/theme.css</code>.</li>
+        <li>اربط نموذج التواصل (انظر قسم النماذج)، ثم ارفع المجلد إلى استضافتك.</li></ol>
+      <p>لتجربة القالب عبر خادم محلي (اختياري):</p>
+<pre><code>cd nawafidh
+python -m http.server 8080
+# ثم افتح http://localhost:8080</code></pre></section>
+
+    <section id="files"><h2>هيكل الملفات</h2>
+<pre><code>index.html / index-en.html          صفحة عرض النماذج
+saas / app / agency / clinic / academy  (.html عربي، -en.html إنجليزي)
+sections.html / sections-en.html    مكتبة الأقسام وكل الأشكال
+blog-post.html / thank-you.html / 404.html (+ نسخ -en)
+assets/css/theme.css   الألوان والخط والزوايا (عدّل هذا الملف فقط للهوية)
+assets/css/style.css   المكونات والأقسام
+assets/js/main.js      كل التفاعلات (بدون مكتبات)
+assets/fonts/          خط Cairo المحلي + OFL.txt
+assets/img/            الأيقونة وصور المعاينة وصورة المشاركة
+docs/                  هذا الدليل
+sitemap.xml, robots.txt</code></pre></section>
+
+    <section id="pages"><h2>الصفحات والنماذج</h2>
+      <table class="t"><tr><th>النموذج</th><th>الملفات</th><th>الأقسام</th></tr>
+        <tr><td>منصة SaaS «مدار»</td><td><code>saas.html</code> · <code>saas-en.html</code></td><td>بطل مقسوم مع لوحة توضيحية، شعارات، مزايا، خطوات، أرقام، أسعار بتبديل شهري/سنوي، آراء، أسئلة، نشرة، دعوة، تواصل</td></tr>
+        <tr><td>تطبيق «خطوة»</td><td><code>app.html</code> · <code>app-en.html</code></td><td>بطل وسط مع جوال وأزرار المتاجر، مزايا بصفوف متبادلة، أرقام، عد تنازلي للإطلاق، باقة واحدة، آراء، أسئلة</td></tr>
+        <tr><td>وكالة «أثر»</td><td><code>agency.html</code> · <code>agency-en.html</code></td><td>بطل طباعي عريض، خدمات، أعمال، منهجية، فريق، آراء، مدونة، تواصل + واتساب</td></tr>
+        <tr><td>عيادة «بسمة»</td><td><code>clinic.html</code> · <code>clinic-en.html</code></td><td>بطل مع نموذج حجز موعد، خدمات، أرقام، أطباء، ساعات العمل، آراء، أسئلة، تواصل + خريطة</td></tr>
+        <tr><td>أكاديمية «مسار»</td><td><code>academy.html</code> · <code>academy-en.html</code></td><td>بطل مع عد تنازلي لبدء الدفعة، مزايا، منهج (أكورديون)، المدرب، جدول مقارنة الأسعار، أرقام، آراء، أسئلة</td></tr>
+      </table>
+      <p>الأسماء والأرقام والشعارات محتوى تجريبي. <b>آراء العملاء نصوص تجريبية بأسماء افتراضية</b> ومعلَّمة بشارة «نص تجريبي»، فاستبدلها بآراء حقيقية أو احذف القسم قبل النشر.</p></section>
+
+    <section id="colors"><h2>الألوان والخط</h2>
+      <p>كل الألوان متغيرات CSS في <code>assets/css/theme.css</code>. القيم في <code>:root</code> تخص نموذج SaaS، وكل نموذج آخر له كتلة <code>[data-demo="..."]</code>، وللوضع الليلي كتل <code>[data-theme="dark"]</code>.</p>
+<pre><code>[data-demo="clinic"] {
+  --brand: #0369a1;         /* اللون الأساسي للأزرار والروابط */
+  --brand-strong: #075985;  /* عند المرور بالمؤشر */
+  --brand-soft: #e0f2fe;    /* خلفيات الأيقونات والشارات */
+  --gradient: linear-gradient(135deg, #0369a1, #0891b2);
+}</code></pre>
+      <p>يستخدم كل نموذج السمة <code>data-demo</code> على وسم <code>&lt;html&gt;</code>. لتغيير الخط عدّل <code>--font</code> واستبدل ملفات <code>assets/fonts</code> (خط Cairo مضمّن محليًا ويدعم العربية واللاتينية).</p></section>
+
+    <section id="lang"><h2>العربية والإنجليزية (RTL / LTR)</h2>
+      <p>لكل صفحة ملفان: العربي <code>name.html</code> بـ <code>dir="rtl"</code>، والإنجليزي <code>name-en.html</code> بـ <code>dir="ltr"</code>. زر اللغة في الترويسة ينقل الزائر للنسخة الأخرى ويحافظ على القسم الحالي. التنسيقات تستخدم الخصائص المنطقية (<code>inline-start</code>) فتعمل في الاتجاهين دون ملف CSS منفصل، ووسوم <code>hreflang</code> تربط النسختين لمحركات البحث.</p>
+      <p>إذا أردت لغة واحدة فقط: احذف الملفات التي لا تحتاجها، واحذف زر اللغة من الترويسة.</p></section>
+
+    <section id="dark"><h2>الوضع الليلي</h2>
+      <p>يتبع القالب إعداد جهاز الزائر تلقائيًا، ويحفظ اختياره عند الضغط على زر القمر/الشمس. يُطبَّق الوضع قبل رسم الصفحة (سكربت قصير في <code>&lt;head&gt;</code>) فلا يظهر وميض. لتعطيله احذف الزر والسكربت.</p></section>
+
+    <section id="sections"><h2>مكتبة الأقسام</h2>
+      <p>صفحة <code>sections.html</code> تعرض أكثر من 20 قسمًا بكل أشكالها: 5 أشكال للبطل، شبكة وصفوف للمزايا، 3 أشكال للأسعار، بورتفوليو، فريق، مدونة، منهج، ساعات عمل، عد تنازلي، نشرة، دعوة، وتواصل. لتركيب صفحة جديدة انسخ أي كتلة <code>&lt;section&gt;</code> والصقها في صفحتك، وكل الأقسام تأخذ ألوان النموذج تلقائيًا.</p></section>
+
+    <section id="forms"><h2>النماذج والربط</h2>
+      <p>أي نموذج يحمل السمة <code>data-validate</code> يتحقق من الحقول في المتصفح (مطلوب، بريد، جوال، طول أدنى، تاريخ، موافقة) مع رسائل خطأ بلغة الصفحة وحقل مخفي ضد الرسائل المزعجة.</p>
+      <ul><li><b>بدون ربط (الافتراضي):</b> ينتقل الزائر إلى <code>thank-you.html</code> عبر <code>data-redirect</code>، أو تظهر رسالة نجاح.</li>
+        <li><b>Formspree أو أي خادم:</b> أضف عنوان الاستقبال، فيُرسل النموذج بطريقة POST:</li></ul>
+<pre><code>&lt;form data-validate data-endpoint="https://formspree.io/f/XXXXXXX" data-redirect="thank-you.html"&gt;</code></pre>
+      <ul><li><b>Netlify Forms:</b> أضف <code>name="contact" data-netlify="true"</code> واحذف <code>data-endpoint</code>.</li>
+        <li><b>واتساب:</b> زر «إرسال عبر واتساب» يجمع الحقول في رسالة ويفتح واتساب. غيّر الرقم في <code>data-whatsapp="9665XXXXXXXX"</code> (بصيغة دولية بدون +).</li>
+        <li><b>PHP:</b> استخدم <code>data-endpoint="send.php"</code> واقرأ الحقول من <code>$_POST</code> في ملفك.</li></ul></section>
+
+    <section id="widgets"><h2>الأسعار والعداد والسلايدر</h2>
+      <ul><li><b>الأسعار:</b> كل سعر يحمل <code>data-monthly</code> و<code>data-yearly</code>، وزر <code>data-billing</code> يبدّل بينهما.</li>
+        <li><b>العد التنازلي:</b> غيّر التاريخ في <code>data-countdown="2026-12-31T20:00:00"</code>.</li>
+        <li><b>العدادات:</b> الرقم في <code>data-count="12000"</code> يتحرك عند ظهوره (يحترم إعداد تقليل الحركة).</li>
+        <li><b>السلايدر:</b> يعمل بالسحب على الجوال وبالأزرار والنقاط، بدون مكتبات.</li>
+        <li><b>الأسئلة الشائعة والمنهج:</b> عناصر <code>&lt;details&gt;</code> أصلية تعمل حتى بدون JavaScript.</li></ul></section>
+
+    <section id="seo"><h2>تحسين محركات البحث</h2>
+      <p>كل صفحة تحتوي على عنوان ووصف ورابط canonical ووسوم Open Graph و Twitter و hreflang وبيانات منظمة JSON-LD. قبل النشر استبدل <code>https://example.com/</code> بنطاقك في الصفحات وفي <code>sitemap.xml</code> و<code>robots.txt</code>، وضع صورة المشاركة في <code>assets/img/og-image.png</code> (1200×630).</p>
+      <p><b>الأداء:</b> خط محلي بصيغة woff2 مع <code>font-display: swap</code> وتحميل مسبق، رسومات SVG مضمّنة بدل الصور، JavaScript واحد مؤجل (defer)، ولا توجد أي طلبات لخوادم خارجية.</p></section>
+
+    <section id="deploy"><h2>النشر</h2>
+      <ul><li><b>استضافة عادية (cPanel):</b> ارفع محتوى المجلد إلى <code>public_html</code>، وأعد تسمية الصفحة التي تريدها رئيسية إلى <code>index.html</code>.</li>
+        <li><b>Netlify / Vercel / GitHub Pages:</b> اسحب المجلد أو اربطه بمستودع، فلا توجد خطوة بناء.</li></ul></section>
+
+    <section id="credits"><h2>المصادر والتراخيص</h2>
+      <ul><li>خط Cairo — SIL Open Font License 1.1 (ملف <code>assets/fonts/OFL.txt</code>)، المصدر: github.com/Gue3bara/Cairo عبر حزمة fontsource.</li>
+        <li>الأيقونات والرسومات التوضيحية SVG من تصميم مؤلف القالب، ولا توجد صور بحقوق نشر أو صور لأشخاص.</li>
+        <li>لا يعتمد القالب على أي مكتبة أو إضافة مدفوعة.</li></ul></section>
+
+    <section id="changelog"><h2>سجل التغييرات</h2>
+      <p><b>2.0.0:</b> إعادة تصميم كاملة كقالب واحد باسم «نوافذ»: 5 نماذج بنظام تصميم موحد، مكتبة أقسام، 5 أشكال للبطل، 3 أشكال للأسعار، نموذج حجز، عد تنازلي، نشرة بريدية، فريق، مدونة ومقال، ربط النماذج (Formspree وواتساب)، خط محلي، SEO و JSON-LD، ودليل عربي جديد.</p>
+      <p><b>1.0.0:</b> الإصدار الأول (3 صفحات هبوط).</p>
+      <p class="muted">الدعم الفني عبر رسائل بيكاليكا.</p></section>
+  </div>
+</main>
+<script src="main.js" defer></script>
+<div id="demo-watermark" dir="rtl" style="position:fixed;bottom:12px;left:12px;z-index:2147483000;background:rgba(17,24,39,.82);color:#fff;font:600 12px/1.4 system-ui,Tahoma,sans-serif;padding:6px 12px;border-radius:999px;pointer-events:none;box-shadow:0 2px 8px rgba(0,0,0,.25)">نسخة عرض — المنتج الكامل على بيكاليكا</div>
+</body>
+</html>

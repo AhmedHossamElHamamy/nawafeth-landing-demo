@@ -1,0 +1,120 @@
+/* ==========================================================================
+   نوافذ | Nawafidh — ملف الهوية (Design tokens)  v2.0.0
+   --------------------------------------------------------------------------
+   الملف الوحيد الذي تحتاجه لتغيير الألوان والخط والزوايا والمسافات.
+   The one file to edit for brand colors, font, radii and spacing.
+
+   - :root                       القيم الافتراضية (نموذج SaaS)
+   - [data-demo="..."]           ألوان كل نموذج جاهز (app, agency, clinic, academy)
+   - [data-theme="dark"]         الوضع الليلي (يعمل مع كل النماذج)
+   ملاحظة: --on-brand لون النص فوق --brand، حافظ على تباين 4.5:1 على الأقل.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Cairo";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 1000;
+  src: url("cairo-arabic-wght-normal.woff2") format("woff2");
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
+}
+@font-face {
+  font-family: "Cairo";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 1000;
+  src: url("cairo-latin-ext-wght-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1E00-1E9F, U+20A0-20AB, U+20AD-20C0, U+2113, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Cairo";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 1000;
+  src: url("cairo-latin-wght-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  /* الخط — font (Cairo, bundled locally, SIL OFL 1.1) */
+  --font: "Cairo", "Segoe UI", Tahoma, system-ui, -apple-system, sans-serif;
+  --fw-heading: 800;
+
+  /* العلامة — brand */
+  --brand: #4f46e5;
+  --brand-strong: #4338ca;
+  --brand-soft: #eef0ff;
+  --brand-text: #4338ca;
+  --on-brand: #ffffff;
+  --accent: #06b6d4;
+  --accent-2: #f472b6;
+  --gradient: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+
+  /* الأسطح والنصوص — surfaces & text */
+  --bg: #ffffff;
+  --bg-alt: #f6f7fb;
+  --surface: #ffffff;
+  --surface-2: #f1f3f9;
+  --text: #0f172a;
+  --muted: #4b5567;
+  --border: #e3e7ef;
+  --line: #d6dbe6;
+  --success: #15803d;
+  --danger: #b91c1c;
+
+  /* الشكل — shape */
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 26px;
+  --pill: 999px;
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 6%), 0 1px 3px rgb(15 23 42 / 6%);
+  --shadow: 0 10px 30px -12px rgb(15 23 42 / 18%);
+  --shadow-lg: 0 30px 60px -20px rgb(15 23 42 / 28%);
+
+  /* التخطيط — layout */
+  --container: 1200px;
+  --header-h: 72px;
+  --section-y: clamp(64px, 9vw, 112px);
+}
+
+/* ---------- نموذج التطبيق | App demo ---------- */
+[data-demo="app"] {
+  --brand: #0f766e; --brand-strong: #115e59; --brand-soft: #e6f6f3; --brand-text: #0f766e;
+  --accent: #f59e0b; --accent-2: #38bdf8;
+  --gradient: linear-gradient(135deg, #0f766e 0%, #0e7490 100%);
+  --radius: 20px; --radius-lg: 32px;
+}
+/* ---------- نموذج الوكالة | Agency demo ---------- */
+[data-demo="agency"] {
+  --brand: #c2410c; --brand-strong: #9a3412; --brand-soft: #fff1e8; --brand-text: #b43c0b;
+  --accent: #1e293b; --accent-2: #facc15;
+  --gradient: linear-gradient(135deg, #c2410c 0%, #b91c1c 100%);
+  --radius-sm: 6px; --radius: 10px; --radius-lg: 16px; --fw-heading: 900;
+}
+/* ---------- نموذج العيادة | Clinic demo ---------- */
+[data-demo="clinic"] {
+  --brand: #0369a1; --brand-strong: #075985; --brand-soft: #e0f2fe; --brand-text: #075985;
+  --accent: #10b981; --accent-2: #a78bfa;
+  --gradient: linear-gradient(135deg, #0369a1 0%, #0891b2 100%);
+  --radius: 18px; --radius-lg: 28px;
+}
+/* ---------- نموذج الأكاديمية | Academy demo ---------- */
+[data-demo="academy"] {
+  --brand: #7c3aed; --brand-strong: #6d28d9; --brand-soft: #f3edff; --brand-text: #6d28d9;
+  --accent: #f59e0b; --accent-2: #ec4899;
+  --gradient: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+}
+
+/* ===================== الوضع الليلي | Dark mode ===================== */
+[data-theme="dark"] {
+  --bg: #0b1020; --bg-alt: #0f1629; --surface: #131b31; --surface-2: #1a2440;
+  --text: #e8ebf4; --muted: #a6afc3; --border: #243150; --line: #2c3a5c;
+  --success: #4ade80; --danger: #f87171;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%); --shadow: 0 12px 30px -12px rgb(0 0 0 / 60%); --shadow-lg: 0 30px 60px -20px rgb(0 0 0 / 70%);
+  --brand: #8b93ff; --brand-strong: #a5abff; --brand-soft: #1d2350; --brand-text: #a5abff; --on-brand: #0b1020;
+  --gradient: linear-gradient(135deg, #3730a3 0%, #5b21b6 100%);
+}
+[data-theme="dark"][data-demo="app"] { --brand: #2dd4bf; --brand-strong: #5eead4; --brand-soft: #0c2e2c; --brand-text: #5eead4; --on-brand: #042f2e; --gradient: linear-gradient(135deg, #115e59 0%, #155e75 100%); }
+[data-theme="dark"][data-demo="agency"] { --brand: #fb923c; --brand-strong: #fdba74; --brand-soft: #34170a; --brand-text: #fdba74; --on-brand: #1c0a00; --accent: #e2e8f0; --gradient: linear-gradient(135deg, #9a3412 0%, #991b1b 100%); }
+[data-theme="dark"][data-demo="clinic"] { --brand: #38bdf8; --brand-strong: #7dd3fc; --brand-soft: #0b2a3d; --brand-text: #7dd3fc; --on-brand: #04202f; --gradient: linear-gradient(135deg, #075985 0%, #0e7490 100%); }
+[data-theme="dark"][data-demo="academy"] { --brand: #c4b5fd; --brand-strong: #ddd6fe; --brand-soft: #2a1a4f; --brand-text: #ddd6fe; --on-brand: #1a0b3a; --gradient: linear-gradient(135deg, #5b21b6 0%, #9d174d 100%); }

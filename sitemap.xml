@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/saas.html</loc></url>
+  <url><loc>https://example.com/saas-en.html</loc></url>
+  <url><loc>https://example.com/app.html</loc></url>
+  <url><loc>https://example.com/app-en.html</loc></url>
+  <url><loc>https://example.com/agency.html</loc></url>
+  <url><loc>https://example.com/agency-en.html</loc></url>
+  <url><loc>https://example.com/clinic.html</loc></url>
+  <url><loc>https://example.com/clinic-en.html</loc></url>
+  <url><loc>https://example.com/academy.html</loc></url>
+  <url><loc>https://example.com/academy-en.html</loc></url>
+  <url><loc>https://example.com/index.html</loc></url>
+  <url><loc>https://example.com/index-en.html</loc></url>
+  <url><loc>https://example.com/sections.html</loc></url>
+  <url><loc>https://example.com/sections-en.html</loc></url>
+  <url><loc>https://example.com/blog-post.html</loc></url>
+  <url><loc>https://example.com/blog-post-en.html</loc></url>
+</urlset>
