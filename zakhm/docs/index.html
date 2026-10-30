@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دليل الاستخدام | زخم</title><link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/theme.css">
+<style>
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.85;font-size:17px}
+.top{background:var(--gradient);color:#fff;padding:40px 24px} .top h1{margin:.4rem 0;font-size:2.1rem} .top p{margin:0;opacity:.9}
+.logo{display:inline-flex;gap:.6rem;align-items:center;font-weight:900;font-size:1.3rem;color:#fff;text-decoration:none}
+.logo span.m{width:38px;height:38px;border-radius:11px;background:rgba(255,255,255,.2);display:grid;place-items:center}
+.icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:260px 1fr;gap:40px;padding:32px 24px}
+nav.toc{position:sticky;top:16px;align-self:start;background:var(--bg-alt);border:1px solid var(--border);border-radius:14px;padding:16px 20px}
+nav.toc ol{margin:.5rem 0 0;padding-inline-start:1.2rem} nav.toc a{color:var(--text);text-decoration:none} nav.toc a:hover{color:var(--brand-text)}
+h2{margin-top:2.6rem;padding-bottom:.4rem;border-bottom:2px solid var(--border);font-size:1.6rem} h3{margin-top:1.6rem}
+table{width:100%;border-collapse:collapse;margin:1rem 0} td,th{border:1px solid var(--border);padding:.5rem .75rem;text-align:start} th{background:var(--bg-alt)}
+pre{background:#0f172a;color:#e2e8f0;padding:14px 16px;border-radius:10px;overflow:auto;font-size:14px;line-height:1.6;text-align:left}
+code{font-family:Consolas,Menlo,monospace;background:var(--surface-2);padding:.05rem .35rem;border-radius:5px;font-size:.9em;direction:ltr;unicode-bidi:isolate} pre code{background:none;padding:0;color:inherit}
+figure{margin:1.2rem 0} figure img{width:100%;border-radius:12px;border:1px solid var(--border);box-shadow:0 10px 30px -12px rgb(15 23 42/25%)}
+figcaption{color:var(--muted);font-size:.92rem;margin-top:.4rem;text-align:center}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+ol.steps{counter-reset:s;list-style:none;padding:0} ol.steps li{counter-increment:s;position:relative;padding:.35rem 2.6rem .35rem 0;margin:.35rem 0}
+ol.steps li::before{content:counter(s);position:absolute;right:0;top:.3rem;width:1.8rem;height:1.8rem;border-radius:50%;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;font-weight:800;font-size:.9rem}
+.note{border-inline-start:4px solid var(--brand);background:var(--brand-soft);padding:.8rem 1rem;border-radius:8px;margin:1rem 0} .note.warn{border-color:#d97706;background:#fff7ed}
+dt{font-weight:800;margin-top:1rem} dd{margin:0 0 .5rem}
+@media (max-width:900px){.wrap{grid-template-columns:1fr} nav.toc{position:static} .pair{grid-template-columns:1fr}}
+@media print{nav.toc{display:none} .wrap{display:block;padding:0 8px} section{break-inside:auto} figure{break-inside:avoid} h2{break-after:avoid} .top{-webkit-print-color-adjust:exact;print-color-adjust:exact} pre{white-space:pre-wrap}}
+</style></head>
+<body>
+<header class="top"><a class="logo" href="../index.html"><span class="m"><svg class="icon" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></svg></span>زخم</a>
+<h1>دليل الاستخدام والتعديل والتركيب</h1><p>قالب موقع منصة SaaS • الإصدار 1.1 • خطوة بخطوة مع صور</p></header>
+<div class="wrap"><nav class="toc"><b>المحتويات</b><ol><li><a href="#intro">مقدمة: ماذا يحتوي الملف</a></li><li><a href="#run">التشغيل على جهازك</a></li><li><a href="#deploy">الرفع على الاستضافة</a></li><li><a href="#anatomy">أجزاء الصفحة وأين تعدّلها</a></li><li><a href="#text">تعديل النصوص والروابط</a></li><li><a href="#colors">تغيير الألوان والخط</a></li><li><a href="#logo">الشعار والأيقونة والصور</a></li><li><a href="#pages">القائمة وإضافة صفحة جديدة</a></li><li><a href="#forms">النماذج والرسائل وواتساب</a></li><li><a href="#dark">الوضع الليلي واللغة</a></li><li><a href="#special">صفحة الأسعار وتبديل شهري وسنوي</a></li><li><a href="#seo">محركات البحث والأداء</a></li><li><a href="#faq">أسئلة شائعة وحل المشكلات</a></li><li><a href="#license">الترخيص والمصادر والدعم</a></li></ol></nav><main><section id="intro"><h2>1. مقدمة: ماذا يحتوي الملف</h2>
+<p><b>زخم</b> قالب موقع منصة SaaS بتصميم واحد متكامل، مكتوب بـ HTML و CSS و JavaScript خالصة بدون أي مكتبات أو إطارات عمل. كل صفحة لها نسخة عربية من اليمين لليسار ونسخة إنجليزية، ويعمل القالب مباشرة من المتصفح أو من أي استضافة.</p>
+<p>العرض المباشر: <a href="https://ahmedhossamelhamamy.github.io/nawafeth-landing-demo/zakhm/" dir="ltr">https://ahmedhossamelhamamy.github.io/nawafeth-landing-demo/zakhm/</a><br>فيديو جولة في القالب (دقيقة واحدة): <a href="https://ahmedhossamelhamamy.github.io/nawafeth-landing-demo/zakhm/video.mp4" dir="ltr">https://ahmedhossamelhamamy.github.io/nawafeth-landing-demo/zakhm/video.mp4</a></p>
+<figure><img src="img/01-home.png" alt="الصفحة الرئيسية كما تظهر بعد فتح index.html"><figcaption>الصفحة الرئيسية كما تظهر بعد فتح index.html</figcaption></figure>
+<h3>الصفحات (13 صفحة بكل لغة)</h3>
+<table><tr><th>الصفحة</th><th>الملف العربي</th><th>الملف الإنجليزي</th></tr><tr><td>الرئيسية</td><td dir="ltr"><code>index.html</code></td><td dir="ltr"><code>index-en.html</code></td></tr><tr><td>المزايا</td><td dir="ltr"><code>features.html</code></td><td dir="ltr"><code>features-en.html</code></td></tr><tr><td>الأسعار وجدول المقارنة</td><td dir="ltr"><code>pricing.html</code></td><td dir="ltr"><code>pricing-en.html</code></td></tr><tr><td>من نحن</td><td dir="ltr"><code>about.html</code></td><td dir="ltr"><code>about-en.html</code></td></tr><tr><td>المدونة بفلترة التصنيفات</td><td dir="ltr"><code>blog.html</code></td><td dir="ltr"><code>blog-en.html</code></td></tr><tr><td>صفحة المقال</td><td dir="ltr"><code>blog-post.html</code></td><td dir="ltr"><code>blog-post-en.html</code></td></tr><tr><td>التواصل والخريطة</td><td dir="ltr"><code>contact.html</code></td><td dir="ltr"><code>contact-en.html</code></td></tr><tr><td>تسجيل الدخول</td><td dir="ltr"><code>login.html</code></td><td dir="ltr"><code>login-en.html</code></td></tr><tr><td>إنشاء حساب</td><td dir="ltr"><code>register.html</code></td><td dir="ltr"><code>register-en.html</code></td></tr><tr><td>سياسة الخصوصية</td><td dir="ltr"><code>privacy.html</code></td><td dir="ltr"><code>privacy-en.html</code></td></tr><tr><td>الشروط والأحكام</td><td dir="ltr"><code>terms.html</code></td><td dir="ltr"><code>terms-en.html</code></td></tr><tr><td>صفحة الخطأ 404</td><td dir="ltr"><code>404.html</code></td><td dir="ltr"><code>404-en.html</code></td></tr><tr><td>صفحة الشكر</td><td dir="ltr"><code>thank-you.html</code></td><td dir="ltr"><code>thank-you-en.html</code></td></tr></table>
+<h3>هيكل الملفات</h3>
+<pre dir="ltr"><code>zakhm-saas-template/
+├── index.html, index-en.html ... (كل الصفحات)
+├── assets/
+│   ├── css/theme.css     ← الألوان والخط والزوايا (هنا تغيّر هويتك)
+│   ├── css/style.css     ← مكونات القالب
+│   ├── css/pages.css     ← تنسيقات الصفحات الداخلية
+│   ├── js/main.js        ← الوضع الليلي، القائمة، العدادات، النماذج
+│   ├── js/pages.js       ← الفلترة وإظهار كلمة المرور
+│   ├── fonts/            ← خط Cairo محلي (SIL OFL 1.1)
+│   └── img/              ← favicon.svg و og-image.png
+├── docs/                 ← هذا الدليل وصوره
+├── دليل-الاستخدام.pdf     ← نسخة PDF من هذا الدليل
+├── sitemap.xml, robots.txt
+└── README.md, LICENSE.txt, CHANGELOG.md</code></pre></section><section id="run"><h2>2. التشغيل على جهازك</h2>
+<p>لا يحتاج القالب أي تثبيت أو أوامر. هناك طريقتان:</p>
+<h3>الطريقة 1: فتح الملف مباشرة</h3>
+<ol class="steps"><li>فك ضغط الملف المضغوط في أي مجلد على جهازك.</li><li>افتح مجلد <code>zakhm-saas-template</code>.</li><li>انقر نقرتين على <code>index.html</code> فيفتح في المتصفح.</li><li>تنقّل بين الصفحات من القائمة العلوية، وجرّب زر EN وزر الوضع الليلي.</li></ol>
+<h3>الطريقة 2: محرر VS Code مع Live Server (مفضلة أثناء التعديل)</h3>
+<ol class="steps"><li>ثبّت برنامج VS Code المجاني من code.visualstudio.com.</li><li>من قائمة Extensions ابحث عن Live Server وثبّته.</li><li>من File ثم Open Folder اختر مجلد <code>zakhm-saas-template</code>.</li><li>انقر بالزر الأيمن على index.html واختر Open with Live Server، فتتحدث الصفحة تلقائياً مع كل حفظ.</li></ol>
+<figure><img src="img/02-editor.png" alt="فتح مجلد القالب في VS Code: الصفحات على اليسار وملف theme.css مفتوح"><figcaption>فتح مجلد القالب في VS Code: الصفحات على اليسار وملف theme.css مفتوح</figcaption></figure></section><section id="deploy"><h2>3. الرفع على الاستضافة</h2>
+<p>القالب موقع ثابت، فيعمل على أي استضافة. ارفع <b>محتوى</b> مجلد <code>zakhm-saas-template</code> وليس المجلد نفسه، بحيث يكون index.html في جذر الموقع.</p>
+<h3>استضافة cPanel (الاستضافات المشتركة)</h3>
+<ol class="steps"><li>ادخل لوحة cPanel ثم File Manager.</li><li>افتح مجلد <code>public_html</code> (أو مجلد النطاق الفرعي).</li><li>اضغط Upload وارفع الملف المضغوط للقالب.</li><li>انقر بالزر الأيمن على الملف واختر Extract، ثم انقل محتوى المجلد إلى public_html.</li><li>افتح نطاقك في المتصفح للتأكد.</li></ol>
+<h3>Netlify (مجاني وبدون أي إعداد)</h3>
+<ol class="steps"><li>ادخل app.netlify.com/drop.</li><li>اسحب مجلد <code>zakhm-saas-template</code> وأفلته في الصفحة.</li><li>خلال ثوان يعطيك Netlify رابطاً مباشراً، ويمكنك ربط نطاقك من Domain settings.</li></ol>
+<h3>GitHub Pages (مجاني)</h3>
+<ol class="steps"><li>أنشئ مستودعاً جديداً على GitHub وارفع محتوى المجلد.</li><li>من Settings ثم Pages اختر الفرع main والمجلد root واحفظ.</li><li>سيظهر رابط موقعك بعد دقيقة تقريباً. هكذا رُفع العرض المباشر لهذا القالب.</li></ol>
+<div class="note tip"><b>نصيحة:</b> بعد الرفع غيّر <code>https://example.com</code> إلى نطاقك في وسوم canonical و hreflang و og:image وفي ملفي sitemap.xml و robots.txt. استخدم البحث والاستبدال في VS Code (Ctrl+Shift+H) لتغييرها في كل الملفات مرة واحدة.</div></section><section id="anatomy"><h2>4. أجزاء الصفحة وأين تعدّلها</h2>
+<p>كل الصفحات تتشارك نفس الترويسة والتذييل، والمحتوى بينهما مقسّم إلى أقسام <code>&lt;section&gt;</code> مستقلة يمكنك حذفها أو تكرارها أو تغيير ترتيبها.</p>
+<figure><img src="img/03-anatomy.png" alt="الأرقام توضح أجزاء الصفحة: 1 الشعار، 2 القائمة، 3 أدوات اللغة والوضع الليلي، 4 زر الدعوة، 5 القسم الرئيسي، 6 قسم محتوى"><figcaption>الأرقام توضح أجزاء الصفحة: 1 الشعار، 2 القائمة، 3 أدوات اللغة والوضع الليلي، 4 زر الدعوة، 5 القسم الرئيسي، 6 قسم محتوى</figcaption></figure>
+<table><tr><th>#</th><th>الجزء</th><th>ابحث في الكود عن</th></tr>
+<tr><td>1</td><td>الشعار واسم الموقع</td><td dir="ltr"><code>class="logo"</code></td></tr>
+<tr><td>2</td><td>روابط القائمة</td><td dir="ltr"><code>class="main-nav"</code></td></tr>
+<tr><td>3</td><td>زر اللغة وزر الوضع الليلي</td><td dir="ltr"><code>data-lang-switch</code> / <code>data-theme-toggle</code></td></tr>
+<tr><td>4</td><td>زر الدعوة في الترويسة</td><td dir="ltr"><code>class="btn btn-primary btn-sm header-cta"</code></td></tr>
+<tr><td>5</td><td>القسم الرئيسي (البطل)</td><td dir="ltr"><code>class="hero</code> أو <code>class="page-hero"</code></td></tr>
+<tr><td>6</td><td>أي قسم محتوى</td><td dir="ltr"><code>&lt;section class="section"</code></td></tr></table></section><section id="text"><h2>5. تعديل النصوص والروابط</h2>
+<p>افتح ملف الصفحة وعدّل النص بين الوسوم مباشرة. مثال لعنوان القسم الرئيسي:</p>
+<pre dir="ltr"><code>&lt;h1&gt;أنجز عمل فريقك &lt;mark&gt;أسرع بمرتين&lt;/mark&gt; دون كتابة سطر برمجي&lt;/h1&gt;</code></pre>
+<p>الكلمات داخل <code>&lt;mark&gt;</code> تظهر بلون العلامة. ولتعديل رابط زر غيّر قيمة <code>href</code>:</p>
+<pre dir="ltr"><code>&lt;a class=&quot;btn btn-primary&quot; href=&quot;contact.html&quot;&gt;تواصل معنا&lt;/a&gt;</code></pre>
+<div class="note tip"><b>نصيحة:</b> عند تعديل صفحة عربية لا تنس نسختها الإنجليزية بنفس الاسم مع <code>-en</code>، مثل about.html و about-en.html.</div></section><section id="colors"><h2>6. تغيير الألوان والخط</h2>
+<p>كل الألوان معرّفة كمتغيرات في ملف واحد هو <code>assets/css/theme.css</code>. غيّر القيمة فيتغير اللون في كل الصفحات.</p>
+<pre dir="ltr"><code>:root {
+  --brand: #4f46e5;        /* اللون الأساسي للأزرار والروابط */
+  --brand-strong: #4338ca; /* عند المرور بالمؤشر */
+  --brand-soft: #eef0ff;   /* خلفيات فاتحة */
+  --accent: #06b6d4;       /* لون ثانوي */
+  --gradient: linear-gradient(135deg, ...); /* شريط الدعوة وشارة الشعار */
+  --radius: 16px;             /* استدارة الزوايا */
+}</code></pre>
+<div class="pair"><figure><img src="img/04-color-before.png" alt="قبل: الألوان الافتراضية"><figcaption>قبل: الألوان الافتراضية</figcaption></figure><figure><img src="img/05-color-after.png" alt="بعد: تغيير --brand و --gradient فقط إلى الأخضر"><figcaption>بعد: تغيير --brand و --gradient فقط إلى الأخضر</figcaption></figure></div>
+<h3>ألوان الوضع الليلي</h3>
+<p>عدّلها داخل <code>[data-theme="dark"]</code> في نفس الملف.</p>
+<h3>تغيير الخط</h3>
+<ol class="steps"><li>ضع ملفات الخط الجديد (woff2) في <code>assets/fonts</code>.</li><li>غيّر مسار <code>src</code> في قواعد <code>@font-face</code> أعلى theme.css.</li><li>غيّر اسم الخط في المتغير <code>--font</code>.</li></ol></section><section id="logo"><h2>7. الشعار والأيقونة والصور</h2>
+<h3>الشعار</h3>
+<p>الشعار في الترويسة والتذييل عبارة عن أيقونة SVG واسم نصي. لاستخدام صورة شعارك استبدل محتوى الرابط بصورة:</p>
+<pre dir="ltr"><code>&lt;a class=&quot;logo&quot; href=&quot;index.html&quot;&gt;&lt;img src=&quot;assets/img/logo.svg&quot; alt=&quot;زخم&quot; height=&quot;38&quot;&gt;&lt;/a&gt;</code></pre>
+<h3>أيقونة المتصفح وصورة المشاركة</h3>
+<p>استبدل <code>assets/img/favicon.svg</code> بأيقونتك، و<code>assets/img/og-image.png</code> بصورة 1200×630 تظهر عند مشاركة الرابط.</p>
+<h3>الصور التوضيحية</h3>
+<p>الرسومات داخل البطاقات رسومات SVG خفيفة للعرض. استبدل أي <code>&lt;svg&gt;</code> داخل <code>class="thumb"</code> بصورة:</p>
+<pre dir="ltr"><code>&lt;div class=&quot;thumb&quot;&gt;&lt;img src=&quot;assets/img/project-1.jpg&quot; alt=&quot;اسم المشروع&quot; width=&quot;800&quot; height=&quot;600&quot; loading=&quot;lazy&quot; style=&quot;width:100%;height:100%;object-fit:cover&quot;&gt;&lt;/div&gt;</code></pre>
+<div class="note tip"><b>نصيحة:</b> المقاسات المقترحة: صور الأعمال 800×600، صور المقالات 800×450، ويفضل صيغة WebP أو JPG مضغوطة.</div></section><section id="pages"><h2>8. القائمة وإضافة صفحة جديدة</h2>
+<ol class="steps"><li>انسخ صفحة قريبة من المطلوب، مثل about.html، وسمّها باسم جديد مثل team.html.</li><li>غيّر <code>&lt;title&gt;</code> و <code>description</code> ورابط canonical داخل <code>&lt;head&gt;</code>.</li><li>احذف الأقسام غير المطلوبة وأضف المحتوى.</li><li>أضف رابطاً في القائمة داخل <code>class="main-nav"</code> وفي التذييل في كل الصفحات.</li><li>كرر الخطوات للنسخة الإنجليزية team-en.html، وأضف الصفحتين إلى sitemap.xml.</li></ol>
+<pre dir="ltr"><code>&lt;li&gt;&lt;a href=&quot;team.html&quot;&gt;الفريق&lt;/a&gt;&lt;/li&gt;</code></pre>
+<p>لتمييز الصفحة الحالية في القائمة أضف <code>class="is-active" aria-current="page"</code> للرابط.</p></section><section id="forms"><h2>9. النماذج والرسائل وواتساب</h2>
+<p>كل النماذج تتحقق من الحقول قبل الإرسال (الاسم، البريد، رقم الجوال، الموافقة) وتعرض رسالة الخطأ تحت الحقل.</p>
+<figure><img src="img/06-form-errors.png" alt="التحقق من الحقول: رسائل واضحة بالعربية تحت كل حقل ناقص"><figcaption>التحقق من الحقول: رسائل واضحة بالعربية تحت كل حقل ناقص</figcaption></figure>
+<h3>استقبال الرسائل على بريدك عبر Formspree (مجاني)</h3>
+<ol class="steps"><li>أنشئ حساباً على formspree.io واضغط New Form.</li><li>انسخ رابط النموذج الذي يشبه https://formspree.io/f/abcdwxyz.</li><li>أضف الخاصية data-endpoint إلى وسم النموذج في contact.html و contact-en.html:</li></ol>
+<pre dir="ltr"><code>&lt;form class=&quot;card reveal&quot; data-validate data-endpoint=&quot;https://formspree.io/f/abcdwxyz&quot; data-redirect=&quot;thank-you.html&quot; novalidate&gt;</code></pre>
+<p>بعد الإرسال الناجح ينتقل الزائر إلى صفحة الشكر <code>thank-you.html</code>.</p>
+<figure><img src="img/07-thanks.png" alt="صفحة الشكر بعد إرسال النموذج"><figcaption>صفحة الشكر بعد إرسال النموذج</figcaption></figure>
+<h3>زر واتساب</h3>
+<p>يفتح محادثة واتساب بنص الرسالة. ضع رقمك بالصيغة الدولية بدون + أو أصفار:</p>
+<pre dir="ltr"><code>&lt;button class=&quot;btn btn-wa&quot; type=&quot;button&quot; data-whatsapp=&quot;9665XXXXXXXX&quot;&gt;إرسال عبر واتساب&lt;/button&gt;</code></pre>
+<div class="note warn"><b>تنبيه:</b> حقل website المخفي في النموذج فخ للبرامج الآلية (honeypot)، اتركه كما هو.</div></section><section id="dark"><h2>10. الوضع الليلي واللغة</h2>
+<div class="pair"><figure><img src="img/08-dark.png" alt="الوضع الليلي: يتبع إعداد الجهاز ويحفظ اختيار الزائر"><figcaption>الوضع الليلي: يتبع إعداد الجهاز ويحفظ اختيار الزائر</figcaption></figure><figure><img src="img/09-english.png" alt="النسخة الإنجليزية من اليسار لليمين"><figcaption>النسخة الإنجليزية من اليسار لليمين</figcaption></figure></div>
+<p>زر EN / ع يربط كل صفحة بنظيرتها. الرابط في <code>data-lang-switch</code> يتغير تلقائياً لكل صفحة، فلو أضفت صفحة جديدة ضع رابط نسختها الأخرى فيه.</p>
+<p>لإلغاء الوضع الليلي احذف زر <code>data-theme-toggle</code> من الترويسة.</p></section><section id="special"><h2>11. صفحة الأسعار وتبديل شهري وسنوي</h2>
+<figure><img src="img/10-special.png" alt="الباقات مع مفتاح التبديل بين الدفع الشهري والسنوي"><figcaption>الباقات مع مفتاح التبديل بين الدفع الشهري والسنوي</figcaption></figure>
+<p>كل سعر له قيمتان: <code>data-monthly</code> و <code>data-yearly</code>، وعند الضغط على المفتاح يتبدل الرقم تلقائياً:</p>
+<pre dir="ltr"><code>&lt;b class=&quot;ltr&quot; data-monthly=&quot;99&quot; data-yearly=&quot;79&quot;&gt;99&lt;/b&gt;&lt;span&gt;ر.س&lt;/span&gt;</code></pre>
+<p>جدول المقارنة في نفس الصفحة جدول HTML عادي داخل <code>class="compare"</code>: علامة الصح أيقونة SVG والشرطة تعني غير متاح.</p>
+<h3>صفحتا الدخول والتسجيل</h3>
+<p>نماذج واجهة فقط بتحقق كامل وزر لإظهار كلمة المرور. اربطها بنظامك بتغيير <code>data-redirect</code> أو بإضافة <code>action</code> لخادمك.</p></section><section id="seo"><h2>12. محركات البحث والأداء</h2>
+<ul><li>عدّل <code>&lt;title&gt;</code> و <code>meta description</code> لكل صفحة بكلمات نشاطك.</li>
+<li>غيّر نطاق example.com كما في قسم الرفع، وارفع sitemap.xml إلى Google Search Console.</li>
+<li>بيانات JSON-LD في رأس كل صفحة تعرّف اسم الموقع لمحركات البحث.</li>
+<li>القالب سريع لأنه بدون مكتبات، والخط محلي مع font-display: swap، والرسومات SVG.</li>
+<li>يعمل على آخر إصدارين من Chrome و Edge و Firefox و Safari، ومتجاوب من 320px.</li></ul>
+<figure><img src="img/11-mobile.png" alt="العرض على الجوال: القائمة تتحول لزر، والأقسام تترتب عمودياً"><figcaption>العرض على الجوال: القائمة تتحول لزر، والأقسام تترتب عمودياً</figcaption></figure></section><section id="faq"><h2>13. أسئلة شائعة وحل المشكلات</h2>
+<dl>
+<dt>الخط لا يظهر عربياً بشكل صحيح</dt><dd>تأكد أن مجلد assets/fonts مرفوع كاملاً وأن المسارات لم تتغير.</dd>
+<dt>النموذج لا يرسل رسائل</dt><dd>بدون data-endpoint يعرض النموذج رسالة نجاح فقط للتجربة. أضف رابط Formspree كما في قسم النماذج.</dd>
+<dt>غيّرت اللون ولم يتغير</dt><dd>امسح ذاكرة المتصفح (Ctrl+F5)، وتأكد أنك عدّلت theme.css وليس style.css.</dd>
+<dt>أريد حذف النسخة الإنجليزية</dt><dd>احذف ملفات *-en.html وزر data-lang-switch ووسوم hreflang.</dd>
+<dt>هل يعمل مع ووردبريس؟</dt><dd>القالب HTML ثابت. يمكن تحويله لقالب ووردبريس لكن ذلك خارج محتوى المنتج.</dd>
+</dl></section><section id="license"><h2>14. الترخيص والمصادر والدعم</h2>
+<ul><li>الترخيص الشخصي: موقع واحد لك أو لمنشأتك. الترخيص التجاري: عدد غير محدود من المواقع بما فيها مواقع عملائك. يمنع إعادة بيع القالب نفسه.</li>
+<li>الخط: Cairo برخصة SIL Open Font License 1.1 (assets/fonts/OFL.txt).</li>
+<li>الأيقونات والرسومات: SVG مرسومة خصيصاً للقالب، بدون أي عنصر من مصدر خارجي.</li>
+<li>كل الأسماء والأرقام والآراء محتوى تجريبي للعرض، استبدلها بمحتواك.</li>
+<li>الدعم: عبر رسائل منصة بيكاليكا.</li></ul></section></main></div>
+</body></html>

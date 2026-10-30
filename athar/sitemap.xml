@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/index.html</loc></url>
+  <url><loc>https://example.com/index-en.html</loc></url>
+  <url><loc>https://example.com/services.html</loc></url>
+  <url><loc>https://example.com/services-en.html</loc></url>
+  <url><loc>https://example.com/work.html</loc></url>
+  <url><loc>https://example.com/work-en.html</loc></url>
+  <url><loc>https://example.com/project.html</loc></url>
+  <url><loc>https://example.com/project-en.html</loc></url>
+  <url><loc>https://example.com/about.html</loc></url>
+  <url><loc>https://example.com/about-en.html</loc></url>
+  <url><loc>https://example.com/careers.html</loc></url>
+  <url><loc>https://example.com/careers-en.html</loc></url>
+  <url><loc>https://example.com/blog.html</loc></url>
+  <url><loc>https://example.com/blog-en.html</loc></url>
+  <url><loc>https://example.com/blog-post.html</loc></url>
+  <url><loc>https://example.com/blog-post-en.html</loc></url>
+  <url><loc>https://example.com/contact.html</loc></url>
+  <url><loc>https://example.com/contact-en.html</loc></url>
+  <url><loc>https://example.com/privacy.html</loc></url>
+  <url><loc>https://example.com/privacy-en.html</loc></url>
+  <url><loc>https://example.com/terms.html</loc></url>
+  <url><loc>https://example.com/terms-en.html</loc></url>
+</urlset>
