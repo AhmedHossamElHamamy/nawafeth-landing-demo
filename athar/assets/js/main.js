@@ -1,5 +1,5 @@
 /*!
- * أثر | Athar — Design & marketing agency website template  v1.0.0
+ * أثر | Athar — Model 1: Design & marketing agency website template  v1.0.0
  * JavaScript خالص بدون مكتبات. يعمل من file:// ومن أي استضافة ثابتة.
  * Vanilla JS, no dependencies. Modules: theme, header & menu, active nav, reveal, counters, pricing toggle,
  * testimonials slider, countdown, forms (validation, Formspree/any endpoint, WhatsApp), language switch, back-to-top.
